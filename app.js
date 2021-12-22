@@ -8,7 +8,7 @@ app.use(cors())
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const getdata = async ()=>{
     try {
-        const datae = await fetch('https://testnets-api.opensea.io/assets?asset_contract_address=0x0d88428A48aD4045B86cb4437D50cd7911905671&order_direction=asc', {
+        const datae = await fetch('https://testnets-api.opensea.io/assets?asset_contract_address=0x00529bf7DC6d4E831272632b3db5723406cb68E3&order_direction=asc', {
             method: 'GET',
             headers: {
                 'Access-Control-Allow-Origin': '*'
